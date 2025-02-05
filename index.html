@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assign-002</title>
+  
+  <!--daysiUi CDN-->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+<!--Google font CDN-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+<style type="text/tailwindcss">
+  .sora-font{
+  font-family: "Sora", serif;
+  }  
+.gradient-1{
+  background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
+ 
+}
+</style>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#F9DF8A',
+          secondary: '#179800',
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="sora-font">
+  <header>
+    <!--Navbar-->
+    <nav class="flex sm:justify-around justify-between py-5 px-3 items-center mb-16 sora-font">
+      <!--Logo-->
+        <div class="flex items-center space-x-3"><img src="images/logo-header.png" alt=""> 
+        </div>
+      
+      <!--Nav iteams-->
+        <div class="hidden lg:block">
+          <ul class="flex space-x-5 text-xl">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+      
+        <!--Nav iteam-2-->
+        <div>
+         <div class="hidden sm:block">
+          <ul class="flex space-x-3 items-center">
+            <li><svg width="18" height="24.002750" viewBox="0 0 21.7522 24.0028" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs/>
+              <path id="Vector" d="M21.56 13.65L19.66 6.82C19.11 4.82 17.9 3.06 16.23 1.82C14.55 0.59 12.52 -0.06 10.44 0C8.36 0.05 6.36 0.8 4.76 2.12C3.15 3.44 2.04 5.26 1.59 7.29L0.11 13.91C-0.05 14.64 -0.04 15.4 0.13 16.13C0.29 16.86 0.63 17.54 1.09 18.12C1.56 18.71 2.16 19.18 2.83 19.5C3.51 19.82 4.25 19.99 5 19.99L6.11 19.99C6.34 21.12 6.95 22.14 7.84 22.87C8.74 23.6 9.86 24 11.01 24C12.16 24 13.28 23.6 14.17 22.87C15.07 22.14 15.68 21.12 15.91 19.99L16.75 19.99C17.52 19.99 18.28 19.81 18.97 19.47C19.66 19.13 20.26 18.63 20.73 18.02C21.19 17.41 21.51 16.69 21.66 15.93C21.8 15.18 21.77 14.4 21.56 13.65ZM11.01 21.99C10.39 21.99 9.79 21.8 9.28 21.44C8.78 21.08 8.4 20.58 8.19 19.99L13.83 19.99C13.62 20.58 13.24 21.08 12.73 21.44C12.23 21.8 11.63 21.99 11.01 21.99ZM19.14 16.81C18.86 17.18 18.5 17.48 18.08 17.68C17.67 17.89 17.21 17.99 16.75 17.99L5 17.99C4.55 17.99 4.1 17.89 3.7 17.7C3.29 17.5 2.94 17.22 2.66 16.87C2.37 16.52 2.18 16.11 2.07 15.67C1.97 15.24 1.97 14.78 2.07 14.34L3.54 7.73C3.89 6.13 4.77 4.7 6.03 3.66C7.29 2.63 8.86 2.04 10.49 2C12.12 1.95 13.72 2.46 15.04 3.43C16.35 4.4 17.3 5.78 17.74 7.35L19.64 14.19C19.76 14.64 19.78 15.1 19.7 15.56C19.61 16.01 19.42 16.44 19.14 16.81Z" fill="#111111" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>
+            </li>
+      
+            <li><svg width="18" height="24.019722" viewBox="0 0 24.0197 24.0197" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs/>
+              <path id="Vector" d="M23.73 22.32L17.77 16.35C19.39 14.36 20.19 11.82 20 9.26C19.81 6.7 18.64 4.31 16.73 2.58C14.83 0.86 12.33 -0.07 9.76 0C7.19 0.06 4.75 1.11 2.93 2.93C1.11 4.75 0.06 7.19 0 9.76C-0.07 12.33 0.86 14.83 2.58 16.73C4.31 18.64 6.7 19.81 9.26 20C11.82 20.19 14.36 19.39 16.35 17.77L22.32 23.73C22.51 23.92 22.76 24.02 23.02 24.01C23.29 24.01 23.54 23.91 23.72 23.72C23.91 23.54 24.01 23.29 24.01 23.02C24.02 22.76 23.92 22.51 23.73 22.32ZM10.03 18.03C8.44 18.03 6.9 17.56 5.58 16.68C4.27 15.8 3.24 14.55 2.64 13.09C2.03 11.63 1.87 10.02 2.18 8.47C2.49 6.91 3.25 5.49 4.37 4.37C5.49 3.25 6.91 2.49 8.47 2.18C10.02 1.87 11.63 2.03 13.09 2.64C14.55 3.24 15.8 4.27 16.68 5.58C17.56 6.9 18.03 8.44 18.03 10.03C18.02 12.15 17.18 14.18 15.68 15.68C14.18 17.18 12.15 18.02 10.03 18.03Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+            </svg>
+            </li>
+      
+            <li class="text-black text-xl px-12 border-solid border-[1px] border-secondary rounded-lg py-2"><a href="">Login</a></li>
+            <li class="text-black text-xl px-12 border-solid bg-secondary rounded-lg py-3"><a href="">Register</a></li>
+          </ul>
+         </div>
+      
+         <div class="block sm:hidden"><svg width="22.500000" height="15.000000" viewBox="0 0 22.5 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <desc>
+              Created with Pixso.
+          </desc>
+          <defs/>
+          <path id="Vector (Stroke)" d="M0 0.93C0 0.41 0.41 0 0.93 0L21.56 0C22.08 0 22.5 0.41 22.5 0.93C22.5 1.45 22.08 1.87 21.56 1.87L0.93 1.87C0.41 1.87 0 1.45 0 0.93ZM0 7.5C0 6.98 0.41 6.56 0.93 6.56L21.56 6.56C22.08 6.56 22.5 6.98 22.5 7.5C22.5 8.01 22.08 8.43 21.56 8.43L0.93 8.43C0.41 8.43 0 8.01 0 7.5ZM0 14.06C0 13.54 0.41 13.12 0.93 13.12L21.56 13.12C22.08 13.12 22.5 13.54 22.5 14.06C22.5 14.58 22.08 15 21.56 15L0.93 15C0.41 15 0 14.58 0 14.06Z" fill="#111111" fill-opacity="1.000000" fill-rule="evenodd"/>
+        </svg>
+        </div>
+        </div>
+      
+        </nav>
+
+  <!--Banner Section-->    
+  <div class="mx-auto gradient-1">
+    <div class="w-9/12 mx-auto">
+  <!--Text container-->
+    <div class="text-center space-y-[32px] sm:max-w-[700px] mx-auto">
+      <h1 class="font-[600] text-[56px] leading-[56px]">Freshness <span class="text-secondary">You Can
+        Count</span> On, Prices You’ll Love!</h1>
+        <p class="text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+    </div>
+    <!--Image container-->
+    <div class="mx-auto max-w-[1031px]"><img src="images/hero-vegetables.png" alt="" class="full"></div>
+  </div>  
+</div>
+</header>
+
+<main>
+<!--Services-->
+<section class="my-20 w-10/12 mx-auto space-y-10 ">
+  <h2 class="text-secondary text-[36px] font-[600]">Services</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-[24px]">
+    <!--card-1-->
+    <div class="text-center bg-[#EFEBE3] space-y-4 py-5 rounded-[16px]">
+      <div class="w-[140px] h-[140px] bg-white rounded-full mx-auto flex items-center justify-center">
+    <img  src="images/service.png" alt="">
+  </div>
+
+  <div class="px-9 space-y-4">
+    <h3 class="text-[24px] font-[600]">24/7 Services </h3>
+    <p class="text-[20px] font-[300] text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+  </div>
+    </div>
+
+       <!--card-2-->
+       <div class="text-center bg-[#EFEBE3] space-y-4 py-5 rounded-[16px]">
+        <div class="w-[140px] h-[140px] bg-white rounded-full mx-auto flex items-center justify-center">
+      <img  src="images/delivery.png" alt="">
+    </div>
+  
+    <div class="px-9 space-y-4">
+      <h3 class="text-[24px] font-[600]">24/7 Services </h3>
+      <p class="text-[20px] font-[300] text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+    </div>
+      </div>
+
+    <!--card-3-->
+    <div class="text-center bg-[#EFEBE3] space-y-4 py-5 rounded-[16px]">
+      <div class="w-[140px] h-[140px] bg-white rounded-full mx-auto flex items-center justify-center">
+    <img  src="images/healthy.png" alt="">
+  </div>
+
+  <div class="px-9 space-y-4">
+    <h3 class="text-[24px] font-[600]">24/7 Services </h3>
+    <p class="text-[20px] font-[300] text-[#111111]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+  </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--Popular Products-->
+<section class="bg-[#EFEBE3] py-28 space-y-10">
+<div class="sm:w-10/12 w-11/12 mx-auto space-y-5">
+  <h2 class="text-secondary text-[36px] font-[600]">Popular Products</h2>
+</div>
+
+
+
+<div class="flex lg:flex-row flex-col sm:w-10/12 mx-auto  gap-7 rounded-[10px]"> <!--Main content container-->
+
+<!--Image Container-->
+<div class="flex">
+  <div class="relative sm:w-[424px] rounded-[10px] mx-auto"><img src="images/Group.jpg" alt="" class="full"></div>
+  <div class="absolute sm:mt-[150px] sm:ms-[130px] ms-[200px] mt-[150px]"><img src="images/vegetable-offer.png" alt=""></div>
+</div>
+
+
+<!--Table Container-->
+<div class="grid sm:grid-cols-3 grid-cols-2 sm:gap-5 gap-4 w-11/12 justify-center mx-auto ">
+
+  <!--Card-1-->
+  <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/potato.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+ <!--Card-2-->
+
+  <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Onion.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+   <!--Card-3-->
+
+   <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Tomato.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+
+
+  <!--Card-4-->
+
+   <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Onion.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+  <!--Card-5-->
+
+  <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Tomato.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+   <!--Card-6-->
+
+   <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Onion.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+ 
+   <!--Card-7-->
+   <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/potato.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+   <!--Card-8-->
+   <div class="flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full">
+    <div class="w-[70px]"><img src="images/Onion.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+
+
+   <!--Card-9-->
+
+  <div class="sm:flex bg-white gap-3 items-center justify-center lg:py-2 lg:px-4 p-3 w-full hidden">
+    <div class="w-[70px]"><img src="images/Tomato.png" alt=""></div>
+
+    <div class="space-y-[10]">
+    <div class="flex text-[15px] font-[400] text-[#111111] space-x-1"><svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <desc>
+          Created with Pixso.
+      </desc>
+      <defs/>
+      <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+    </svg>
+    <p>4.5 </p></div>
+    <h4 class="text-[18px] font-[600] text-[ #111111]">Tomato 500 g</h4>
+    <h5 class="text-[ #111111.] text-[15px] text-[500]">$39.99</h5>
+  </div>
+  </div>
+
+
+</div>
+</div>
+</section>
+
+
+<!--Arrival & Offers-->
+<section class="lg:w-10/12 w-11/12 mx-auto my-10">
+  <div class="space-y-5">
+    <h2 class="text-secondary text-[36px] font-[600]">Popular Products</h2>
+  </div>
+
+
+
+  <div>
+  <!--picture-1-->
+  <div></div>
+
+
+    <!--picture-2-->
+    <div></div>
+
+  </div>
+
+</section>
+
+</main>
+  <footer></footer>
+
+</body>
+</html>
